@@ -181,7 +181,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👩‍💻 Author
 
-**Sadiya** - *Full-Stack Developer & AI Enthusiast*
+**Sadiya Noor** - *Full-Stack Developer & AI Enthusiast*
 
 - 💼 **LinkedIn**: [Connect with me](https://linkedin.com/in/sadiya-profile)
 - 🐱 **GitHub**: [@sadiya595](https://github.com/sadiya595)
