@@ -185,8 +185,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 💼 **LinkedIn**: [Connect with me](https://linkedin.com/in/sadiya-profile)
 - 🐱 **GitHub**: [@sadiya595](https://github.com/sadiya595)
-- 📧 **Email**: sadiya.dev@example.com
-- 🌐 **Portfolio**: [View my projects](https://sadiya-portfolio.dev)
+- 📧 **Email**: noorsadiya464@gmail.com
 
 ## 🙏 Acknowledgments
 
