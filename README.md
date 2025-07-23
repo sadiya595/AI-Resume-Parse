@@ -80,7 +80,7 @@ python app.py
 Navigate to `http://localhost:5000` to access the application.
 
 ## 🏗️ Project Structure
-
+```
 AI-Resume-Parse/
 ├── app.py # Flask application entry point
 ├── resume_parser.py # Core NLP parsing engine
@@ -95,7 +95,7 @@ AI-Resume-Parse/
 │ └── js/
 │ └── app.js # Interactive JavaScript
 └── README.md # Project documentation
-
+```
 
 ## 💻 Usage
 
