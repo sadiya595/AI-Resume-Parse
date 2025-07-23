@@ -1,0 +1,33 @@
+# Create .gitignore file
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+static/uploads/
+*.log
+
+# Backup files
+*_backup.py
+*_fixed.py
+app_test.py
+quick_fix.py
+test_backend.py
+"@ | Out-File -FilePath .gitignore -Encoding utf8

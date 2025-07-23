@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🤖 AI Resume Parser & Analysis Tool</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}"
+  />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header-section">
+      <h1>🚀 AI-Powered Resume Parser</h1>
+      <p class="subtitle">
+        Transform your resume into structured insights with advanced AI
+        analysis
+      </p>
+    </header>
+
+    <!-- Upload Card -->
+    <section class="upload-section">
+      <!-- Dynamic upload area -->
+      <div id="drop-area" class="upload-area" data-state="initial">
+        <!-- Initial state -->
+        <div class="upload-content initial-state">
+          <div class="upload-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h3>📄 Upload Your Resume</h3>
+          <p class="upload-text">
+            Drag & drop your resume here or click to browse
+          </p>
+          <p class="upload-formats">
+            Supports PDF, DOC and DOCX files (≤ 16 MB)
+          </p>
+          <button type="button" class="browse-btn">
+            <i class="fas fa-folder-open"></i> Browse Files
+          </button>
+        </div>
+
+        <!-- File-selected state -->
+        <div class="upload-content file-selected-state">
+          <div class="upload-icon success">
+            <i class="fas fa-file-check"></i>
+          </div>
+          <h3>✅ File Selected</h3>
+          <p class="file-info">
+            <span class="file-name"></span>
+            <span class="file-size"></span>
+          </p>
+          <button type="button" class="change-file-btn">
+            <i class="fas fa-exchange-alt"></i> Change File
+          </button>
+        </div>
+
+        <!-- Processing state -->
+        <div class="upload-content processing-state">
+          <div class="upload-icon processing">
+            <i class="fas fa-brain fa-pulse"></i>
+          </div>
+          <h3>🧠 AI Processing…</h3>
+          <p class="processing-text">
+            Analyzing your resume with advanced NLP algorithms
+          </p>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+
+        <!-- Success state -->
+        <div class="upload-content success-state">
+          <div class="upload-icon complete">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>🎉 Analysis Complete!</h3>
+          <p class="success-text">
+            Your resume was parsed and analyzed successfully
+          </p>
+          <button type="button" class="upload-new-btn">
+            <i class="fas fa-plus"></i> Upload Another Resume
+          </button>
+        </div>
+
+        <!-- Hidden file input -->
+        <input
+          id="fileInput"
+          type="file"
+          accept=".pdf,.doc,.docx"
+          style="display: none"
+        />
+      </div>
+
+      <!-- Optional job-description box -->
+      <div class="job-section">
+        <label for="jobDescription" class="job-label">
+          <i class="fas fa-briefcase"></i> Job Description (Optional)
+        </label>
+        <p class="job-description-help">
+          💡 Paste a job description to get compatibility analysis and
+          recommendations.
+        </p>
+        <textarea
+          id="jobDescription"
+          placeholder="Paste the job description here…"
+        ></textarea>
+      </div>
+
+      <!-- Main action button -->
+      <button id="uploadBtn" class="upload-button" disabled>
+        <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+        <span class="btn-text">Analyze Resume with AI</span>
+      </button>
+    </section>
+
+    <!-- Status / toast -->
+    <div id="status" class="status-message"></div>
+
+    <!-- Results -->
+    <section
+      id="resultTabs"
+      class="results-container"
+      style="display: none"
+    ></section>
+  </div>
+
+  <!-- Main script -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
