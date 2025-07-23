@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.pylint",
+        "ms-python.black-formatter",
+        "ms-python.debugpy",
+        "bradlc.vscode-tailwindcss",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.path-intellisense",
+        "ms-python.isort",
+        "njpwerner.autodocstring",
+        "eamodio.gitlens",
+        "usernamehw.errorlens",
+        "ms-vscode.vscode-json"
+    ]
+}
