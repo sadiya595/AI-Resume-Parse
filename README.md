@@ -33,11 +33,6 @@ An intelligent web application that leverages advanced Natural Language Processi
 - **Education Filtering**: Focuses on academic qualifications, excludes certifications
 - **Personalized Recommendations**: Tailored advice based on profile analysis
 
-## 🚀 Live Demo
-
-**[Try the AI Resume Parser →](https://ai-resume-parser-sadiya.onrender.com)**
-
-*Upload your resume and experience the power of AI-driven analysis!*
 
 ## 🛠️ Technology Stack
 
